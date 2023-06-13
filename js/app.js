@@ -40,22 +40,19 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('navbar');
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+var isMobile = window.matchMedia("(max-width: 920px)").matches;
 
-navbar.addEventListener('mouseenter', () => {
+if (isMobile) {
   navbar.classList.add('show');
-});
+} else {
+  navbar.addEventListener('mouseenter', () => {
+    navbar.classList.add('show');
+  });
 
-navbar.addEventListener('mouseleave', () => {
-  navbar.classList.remove('show');
-});
+  navbar.addEventListener('mouseleave', () => {
+    navbar.classList.remove('show');
+  });
+}
 
 
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
