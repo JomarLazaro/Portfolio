@@ -83,6 +83,11 @@ img {
   justify-content: center;
 }
 
+.column-2.image img {
+  width: 70%; /* Adjust the width value as desired */
+  height: auto; /* Set height to auto to maintain the aspect ratio */
+}
+
 .z-index {
   position: relative;
   z-index: 2;
