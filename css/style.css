@@ -231,12 +231,21 @@ header {
 }
 
 #navbar {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
+  height: 10%; /* Adjust the height value as desired */
+  opacity: 0; /* Hide the navigation by default */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+#navbar.show {
+  opacity: 1; /* Show the navigation when .show class is added */
 }
 
 nav {
@@ -253,8 +262,8 @@ nav .container {
 }
 
 .logo {
-  width: 80px;
   display: flex;
+  width: 8%;
   align-items: center;
 }
 

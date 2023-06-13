@@ -49,6 +49,15 @@ window.addEventListener('scroll', function() {
   }
 });
 
+navbar.addEventListener('mouseenter', () => {
+  navbar.classList.add('show');
+});
+
+navbar.addEventListener('mouseleave', () => {
+  navbar.classList.remove('show');
+});
+
+
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
 filter_btns.forEach((btn) =>
