@@ -31,6 +31,15 @@ hamburger_menu.addEventListener("click", () => {
   }
 });
 
+window.addEventListener('DOMContentLoaded', function() {
+  var cvLink = document.getElementById('cvLink');
+  cvLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    var link = 'https://drive.google.com/uc?export=download&id=1Nw2BQ4K74zxlxG0el_q5nePb72kR4VQu';
+    window.location.href = link;
+  });
+});
+
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
 filter_btns.forEach((btn) =>

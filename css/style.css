@@ -84,8 +84,8 @@ img {
 }
 
 .column-2.image img {
-  width: 70%; /* Adjust the width value as desired */
-  height: auto; /* Set height to auto to maintain the aspect ratio */
+  width: 70%;
+  height: 70%;
 }
 
 .z-index {
