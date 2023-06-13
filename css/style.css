@@ -368,7 +368,9 @@ nav.open .links {
   font-size: 3.8rem;
   line-height: 0.8;
   color: var(--dark-one);
+  margin-top: 50px;
 }
+
 
 .header-content .text {
   margin: 2.15rem 0;
@@ -437,6 +439,7 @@ header .circle {
   left: 15px;
   opacity: 0.06;
 }
+
 
 /* End header */
 
